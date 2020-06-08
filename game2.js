@@ -490,6 +490,7 @@ function diceRollA() {
           break start;
         }else{
           alert("Enter a number only between 1 & 6!👀");
+          continue start;
         }
       }while(1);
       // randomNumberA = Math.floor(Math.random() * 6) + 1; //1-6
@@ -734,6 +735,7 @@ function diceRollB() {
           break start;
         }else{
           alert("Enter a number only between 1 & 6!👀");
+          continue start;
         }
       }while(1);
       randomNumberB = Math.floor(Math.random() * 6) + 1; //1-6
