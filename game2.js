@@ -738,7 +738,6 @@ function diceRollB() {
           continue startb;
         }
       }while(1);
-      randomNumberB = Math.floor(Math.random() * 6) + 1; //1-6
       randomDiceImageB = "dice" + randomNumberB + ".png"; //dice1.png - dice6.png
 
       var imgB = $("#dicepPlayerB");
