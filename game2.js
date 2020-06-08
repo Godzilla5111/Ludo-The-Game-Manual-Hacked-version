@@ -482,8 +482,9 @@ function diceRollA() {
   if (chance === true) {
 
     if (numberOfCoinsCompletedB < 2) { //check to ensure that atleast one coin of playerA has not completed the grid!
-      var numberProvidedA = prompt("Enter the number you want to roll playerA!");
+
       start: do{
+        var numberProvidedA = prompt("Enter the number you want to roll playerA!");
         if((numberProvidedA === '1') || (numberProvidedA === '2') || (numberProvidedA === '3') || (numberProvidedA === '4') || (numberProvidedA === '5') || (numberProvidedA === '6')){
           randomNumberA = parseInt(numberProvidedA.replace(/^\D+/g, ''));
           break start;
@@ -725,8 +726,9 @@ function diceRollB() {
   if (chance === false) {
 
     if (numberOfCoinsCompletedA < 2) { //check to ensure that atleast one coin of playerA has not completed the grid!
-      var numberProvidedB = prompt("Enter the number you want to roll playerB!");
+
       start: do{
+        var numberProvidedB = prompt("Enter the number you want to roll playerB!");
         if((numberProvidedB === '1') || (numberProvidedB === '2') || (numberProvidedB === '3') || (numberProvidedB === '4') || (numberProvidedB === '5') || (numberProvidedB === '6')){
           randomNumberB = parseInt(numberProvidedB.replace(/^\D+/g, ''));
           break start;
