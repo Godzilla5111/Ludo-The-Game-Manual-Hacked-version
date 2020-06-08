@@ -708,6 +708,9 @@ function diceRollA() {
     } else {
       alert("PlayerB won the game! Refresh the page to play again!");
       $('h1').html(playerB + " won the game!🥇");
+      $('.turnA').html('');
+      $('.turnB').html('');
+      $('.roll').html("Game<br> Over!");
       var won = new Audio('applause.mp3');
       won.play();
     }
@@ -955,6 +958,9 @@ function diceRollB() {
     } else {
       alert("PlayerA won the game! Refresh the page to play again!");
       $('h1').html("🥇" + playerA + " won the game!");
+      $('.turnA').html('');
+      $('.turnB').html('');
+      $('.roll').html("Game<br> Over!");
       var won = new Audio('applause.mp3');
       won.play();
     }
