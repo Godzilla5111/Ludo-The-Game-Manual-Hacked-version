@@ -483,14 +483,14 @@ function diceRollA() {
 
     if (numberOfCoinsCompletedB < 2) { //check to ensure that atleast one coin of playerA has not completed the grid!
 
-      start: do{
+      starta: do{
         var numberProvidedA = prompt("Enter the number you want to roll playerA!");
         if((numberProvidedA === '1') || (numberProvidedA === '2') || (numberProvidedA === '3') || (numberProvidedA === '4') || (numberProvidedA === '5') || (numberProvidedA === '6')){
           randomNumberA = parseInt(numberProvidedA.replace(/^\D+/g, ''));
-          break start;
+          break starta;
         }else{
           alert("Enter a number only between 1 & 6!👀");
-          continue start;
+          continue starta;
         }
       }while(1);
       // randomNumberA = Math.floor(Math.random() * 6) + 1; //1-6
@@ -728,14 +728,14 @@ function diceRollB() {
 
     if (numberOfCoinsCompletedA < 2) { //check to ensure that atleast one coin of playerA has not completed the grid!
 
-      start: do{
+      startb: do{
         var numberProvidedB = prompt("Enter the number you want to roll playerB!");
         if((numberProvidedB === '1') || (numberProvidedB === '2') || (numberProvidedB === '3') || (numberProvidedB === '4') || (numberProvidedB === '5') || (numberProvidedB === '6')){
           randomNumberB = parseInt(numberProvidedB.replace(/^\D+/g, ''));
-          break start;
+          break startb;
         }else{
           alert("Enter a number only between 1 & 6!👀");
-          continue start;
+          continue startb;
         }
       }while(1);
       randomNumberB = Math.floor(Math.random() * 6) + 1; //1-6
